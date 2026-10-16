@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Un Mensaje para Ti</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        img {
+            max-width: 95%;
+            max-height: 95vh;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+            object-fit: contain;
+        }
+    </style>
+</head>
+<body>
+
+    <img id="imagenEvangelio" src="" alt="Mensaje de Fe">
+
+    <script>
+        const misImagenes = [
+            "https://postimg.cc",
+            "https://postimg.cc",
+            "https://postimg.cc"
+        ];
+
+        const indiceAleatorio = Math.floor(Math.random() * misImagenes.length);
+        document.getElementById("imagenEvangelio").src = misImagenes[indiceAleatorio];
+    </script>
+</body>
+</html>
